@@ -7,45 +7,78 @@ body, html {
   
   .main {
     display: flex;           /* Flexbox to display the boxes side by side */
+    flex-direction: column;
     height: 100vh;           /* Full viewport height */
     padding: 20px;           /* Add some padding around the boxes */
     box-sizing: border-box;   /* Ensure padding is included in the element's width and height */
     gap: 20px;               /* Adds space between the two boxes */
   }
   
-  .first, .second {
-    flex: 1;                 /* Each box takes up equal space */
+  .zero, .first, .second {
+    flex: 3;                 /* Each box takes up equal space */
     border: 2px solid #ccc;   /* Light border around the boxes */
-    padding: 20px;           /* Padding inside the boxes */
+    border-radius: 10px;
+    padding: 10px;           /* Padding inside the boxes */
     box-sizing: border-box;   /* Include padding in width/height */
   }
   
   .first {
-    background-color: #f0f8ff; /* Light background for the first box */
+    border: none;
+    background-color: #ccffdd; /* Light background for the first box */
+
   }
   
   .second {
-    background-color: #f5f5f5; /* Light gray background for the second box */
+    border: none;
+
+    background-color: #ccffdd; /* Light gray background for the second box */
   }
   
   .first {
     display: flex;            /* Flexbox for horizontal layout */
+    flex:1;
+    flex-direction: column;
     justify-content: center; /* Align buttons to the left */
-    align-items: flex-start;  /* Align buttons at the top of the first box */
+    align-items: center;  /* Align buttons at the top of the first box */
     gap: 10px;                /* Space between the buttons */
   }
   
-  button {
+  .button {
     padding: 8px 16px;        /* Smaller padding for the buttons */
     font-size: 14px;          /* Slightly smaller text size */
     cursor: pointer;          /* Pointer cursor on hover */
     border: none;             /* Remove default button border */
-    background-color: #3498db; /* Blue background for buttons */
-    color: white;             /* White text color */
+    background-color:  #006622; /* Blue background for buttons */
+    color: #ccffdd;             /* White text color */
     border-radius: 5px;       /* Rounded corners for buttons */
+    width: 40rem;
   }
   
   button:hover {
-    background-color: #2980b9; /* Darken button color on hover */
+    background-color: #41647c; /* Darken button color on hover */
   }
-  
+.second{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:solid 1px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.added{
+  width:50rem;
+  font-size: larger;
+}
+.zero{
+  display: flex;
+  flex:0.5;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bolder;
+  color:  #006622;
+  background-color: #ccffdd;
+  border-radius: 5px;
+  border:none;
+}
