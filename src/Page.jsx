@@ -28,9 +28,9 @@ const Page = () => {
                     <option value='Radio'>Radio</option>
                     <option value='Check-Box'>Check-Box</option>
                 </select>
-                <input className='button' placeholder='write place holder' onChange={written}>
+                <input className='button' placeholder='write place holder' onChange={written} style={{color:'#ccffdd'}}>
                 </input>
-                <button onClick={submit}>ADD</button>
+                <button onClick={submit} style={{backgroundColor:'#ccffdd'}}>ADD</button>
             </div>
             <div className='second' id='form'>
                 {element.map((el, index) => {
